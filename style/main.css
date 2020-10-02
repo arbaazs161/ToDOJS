@@ -1,0 +1,72 @@
+.container{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    padding: 10px;
+}
+.inner-container{
+    background-image: linear-gradient(to bottom right,coral,aqua);
+    max-height: 500px;
+    height: 400px;
+    width:50%;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 10px;
+}
+body{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+}
+h3{
+    font-size:larger;
+}
+*{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.input-field{
+    width:80%;
+    height:30px;
+    border-radius: 10px;
+    border:0px;
+}
+
+.button-field{
+    background-color: darkgrey;
+    height:30px;
+    border-radius: 10px;
+    border:0px;
+}
+ul{
+    list-style: none;
+}
+
+.list-div{
+    display:flex;
+    margin-left: 10px;
+    font-size: small;
+}
+hr{
+    border:1px solid black;
+    box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.75);
+}
+
+.checkrotate{
+    display: none;
+}
+
+.checkbtn{
+    border:0px;
+    background-color: greenyellow;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.cancelbtn{
+    border:0px;
+    background-color: firebrick;
+    border-radius: 5px;
+    padding: 5px;
+}
