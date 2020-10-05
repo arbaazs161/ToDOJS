@@ -83,16 +83,34 @@ function onCheck(id){
     var btnElem1 = document.getElementById("conf_"+id.id.substring(3));
     btnElem1.classList.remove("checkrotate");
 
-    var btnElem1 = document.getElementById("canc_"+id.id.substring(3));
-    btnElem1.classList.remove("checkrotate");
+    var btnElem2 = document.getElementById("canc_"+id.id.substring(3));
+    btnElem2.classList.remove("checkrotate");
     
     //liElem.appendChild(btnElem1);
 }
 
 function onConfirm(id){
+    
+    //console.log(orig_Task);
+    var btnElem1 = document.getElementById("conf_"+id.id.substring(5));
+    btnElem1.classList.add("checkrotate");
+
+    var btnElem2 = document.getElementById("canc_"+id.id.substring(5));
+    btnElem2.classList.add("checkrotate");
+    
+    var orig_Task = document.getElementById("id_"+id.id.substring(5)).innerHTML;
+    var new_Html = "<del>"+orig_Task+"</del>";
+    document.getElementById("id_"+id.id.substring(5)).innerHTML = new_Html;
 
 }
 
 function onCancel(id){
+    var cbElem = document.getElementById("cb_"+id.id.substring(5));
+    cbElem.classList.remove("checkrotate");
+    cbElem.checked = false;
+    var btnElem1 = document.getElementById("conf_"+id.id.substring(5));
+    btnElem1.classList.add("checkrotate");
 
+    var btnElem2 = document.getElementById("canc_"+id.id.substring(5));
+    btnElem2.classList.add("checkrotate");
 }
